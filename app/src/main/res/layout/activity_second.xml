@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/toasts"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:text="Do you want to take the soccer fan quiz?"
+        android:textSize="55sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/yes1"
+/>
+    <Button
+        android:id="@+id/yes1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="yes"
+        android:onClick="takeQuiz"
+        android:textSize="40dp"
+        app:layout_constraintTop_toBottomOf="@id/toasts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/no1"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+        android:id="@+id/no1"
+        app:layout_constraintStart_toEndOf="@id/yes1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toasts"
+        android:text="no"
+        android:onClick="noQuiz"
+        android:textSize="40dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+
+</android.support.constraint.ConstraintLayout>
